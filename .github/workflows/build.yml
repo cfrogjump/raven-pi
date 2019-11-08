@@ -17,5 +17,11 @@ jobs:
     - name: build the image
       run: |
           sudo ./build.sh -c raven-pi.config
-          sudo find / -iname *.img -print
-          sudo find / -iname *.zip -print
+  release:
+    steps:
+    - uses: actions/upload-artifact@master
+      with:
+        name: draft the image release
+        path: ${{ github.workspace }}/work/raven-pi/raven-pi/deploy
+          # /home/runner/work/raven-pi/raven-pi/deploy/image_2019-11-08-raven-pi-lite.zip
+          
