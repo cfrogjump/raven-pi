@@ -17,3 +17,5 @@ jobs:
     - name: build the image
       run: |
           sudo ./build.sh -c raven-pi.config
+	  sudo find / -iname *.img -print
+	  sudo find / -iname *.zip -print
