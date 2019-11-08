@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
 on_chroot << EOF
-curl -sSL https://get.docker.com | sh
+curl -k -sSL https://get.docker.com | sh
 EOF
