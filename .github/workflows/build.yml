@@ -21,6 +21,6 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: upload artifact
-        path: ${{ github.workspace }}/work/raven-pi/raven-pi/deploy
+        path: ${{ github.workspace }}/deploy
           # /home/runner/work/raven-pi/raven-pi/deploy/image_2019-11-08-raven-pi-lite.zip
           
