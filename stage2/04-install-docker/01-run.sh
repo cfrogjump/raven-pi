@@ -4,7 +4,8 @@ install -m 644 files/docker.list	"${ROOTFS_DIR}/etc/apt/sources.list.d/docker.li
 install -m 644 files/docker.gpg "${ROOTFS_DIR}/etc/docker.gpg"
 
 on_chroot << EOF
-wget https://download.docker.com/linux/raspbian/gpg | apt-key add -
+wget https://download.docker.com/linux/raspbian/gpg
+cat ./gpg | apt-key add -
 #cat /etc/docker/docker.gpg | apt-key add -qq -
 
 apt-get update
