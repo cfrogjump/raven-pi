@@ -12,6 +12,6 @@ if [[ -e /etc/docker.gpg ]]; then
 fi
 
 apt-get update
-apt-get install -y -qq --no-install-recommends docker-ce docker.io docker-compose
+apt-get install -y -qq --no-install-recommends docker-ce docker-compose
 usermod -aG docker pi
 EOF
